@@ -1,0 +1,17 @@
+{
+  "params":
+  {
+    "local server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/crazyblog",
+    "prod_uri": "mysql+pymysql://root:@localhost/crazyblog",
+    "blog_name": "Steven's Blog",
+    "fb_url": "https://www.reddit.com/user/steven4869/",
+    "tw_url": "https://twitter.com/Steven4869/media",
+    "about_text": "Hi,guys my name is Steven and I am learning programming with the help of online tutorials and internet resources.Hope you will give me your feedbacks and tell me more about your experiences",
+    "admin_user": "steven",
+    "admin_password": "steven",
+    "upload_location": "C:\\Users\\shivam\\PycharmProjects\\Flask\\static",
+    "no_of_posts": 2
+  }
+
+}

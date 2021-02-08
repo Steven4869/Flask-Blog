@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Signin</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+ <!-- <body style="background-image: url({{url_for('static',filename='imag.jpg')}})" style="max-height: 100"> -->
+  <style>
+    body{
+      background-image: url({{url_for('static',filename='backg.png')}});
+      background-repeat: no-repeat;
+      backgorund-attachment:fixed;
+      background-size:cover;}
+
+  </style>
+
+  <body class="text-center" >
+    <link href="{{url_for('static', filename='css/signin.css')}}" rel="stylesheet">
+    <form class="form-signin" action="/dashboard" method="post">
+      <!--<img class="mb-4" src="img2.jpg" alt="" width="72" height="72">-->
+      <img src="url({{url_for('static',filename='attackontitan.png')}}) width="72" height="72" ">
+      <h1 class="h3 mb-3 font-weight-normal" style="color: black">Please sign in</h1>
+      <label for="uname" class="sr-only">User Name</label>
+      <input type="text" id="uname" name="uname" class="form-control" placeholder="User Name" required autofocus>
+      <label for="pass" class="sr-only">Password</label>
+      <input type="password" id="pass" name="pass" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; {{params['blog_name']}} 2021</p>
+    </form>
+  </body>
+</html>
