@@ -1,2 +1,3 @@
-# Flak-Blog
-Blog made by Steven Pens as a part of tutorial
+# Flask-Blog
+An introductory-easy to make blog done by me with the help of Python Flask, HTML,CSS and JS.
+
